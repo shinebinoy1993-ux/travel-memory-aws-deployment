@@ -18,7 +18,11 @@ export default function Home() {
               <FeaturedCard
                 title={e.tripName}
                 tripType={e.tripType}
-                description={e.shortDescription}
+                description={
+                e.shortDescription && e.shortDescription.length > 180
+                  ? e.shortDescription.substring(0, 180) + "..."
+                  : e.shortDescription
+                }
                 id={e._id}
               ></FeaturedCard>
             );
@@ -32,7 +36,11 @@ export default function Home() {
               <Card
                 title={e.tripName}
                 tripType={e.tripType}
-                description={e.shortDescription}
+                description={
+                e.shortDescription && e.shortDescription.length > 180
+                  ? e.shortDescription.substring(0, 180) + "..."
+                  : e.shortDescription
+                }
                 id={e._id}
               ></Card>
             );

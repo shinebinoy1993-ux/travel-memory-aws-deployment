@@ -128,3 +128,15 @@ dist
 .yarn/build-state.yml
 .yarn/install-state.gz
 .pnp.*
+
+# Local environment and secrets
+.env
+.evn
+**/.env
+**/.evn
+
+# Local environment and secrets
+.env
+.evn
+**/.env
+**/.evn
